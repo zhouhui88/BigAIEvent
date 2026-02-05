@@ -5,38 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AI大事件</title>
   <style>
-    :root { --bg:#0b0f19; --card:#121a2a; --muted:#92a2c3; --text:#e8eefc; --link:#8ab4ff; --tag:#1f2a44; }
-    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei"; background:var(--bg); color:var(--text);} 
-    header { padding:24px 18px 12px; max-width: 980px; margin:0 auto; }
-    h1 { margin:0 0 6px; font-size: 22px; }
-    .sub { color:var(--muted); font-size: 13px; line-height: 1.5; }
-    main { max-width: 980px; margin:0 auto; padding: 12px 18px 48px; }
-    .list { list-style: decimal; padding-left: 18px; margin: 10px 0 0; display:flex; flex-direction:column; gap: 12px; }
-    .card { list-style-position: outside; background:var(--card); border:1px solid #1b2742; border-radius:14px; padding:14px 14px 12px; }
-    .title { font-size: 15px; font-weight: 650; margin: 0 0 8px; line-height:1.35; }
-    .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:10px; }
-    .tag { background:var(--tag); border:1px solid #2a3a62; color:var(--muted); border-radius:999px; padding:3px 8px; font-size:12px; }
-    .score { color:#ffd479; }
-    .content { color:#d6def4; font-size: 13px; line-height:1.55; }
-    .sources { margin-top:10px; font-size: 12px; }
-    .sources a { color:var(--link); text-decoration:none; }
-    .sources a:hover { text-decoration:underline; }
-    footer { max-width: 980px; margin: 0 auto; padding: 0 18px 18px; color: var(--muted); font-size: 12px; }
-    .error { color:#ffb4b4; }
+    :root {
+      --paper: #fbf7ef;
+      --ink: #111827;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --border: #ece5d8;
+      --link: #1d4ed8;
+      --accent: #b91c1c;
+    }
+    body {
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
+      background: var(--paper);
+      color: var(--ink);
+    }
+    header { padding: 26px 18px 12px; max-width: 980px; margin:0 auto; }
+    .masthead { border-bottom: 3px solid var(--ink); padding-bottom: 12px; }
+    .brand { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 6px; }
+    h1 { margin:0; font-size: 28px; line-height: 1.15; font-weight: 800; }
+    main { max-width: 980px; margin:0 auto; padding: 14px 18px 46px; }
+    .list { list-style: decimal; padding-left: 22px; margin: 14px 0 0; display:flex; flex-direction:column; gap: 12px; }
+    .card {
+      list-style-position: outside;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: 0 1px 0 rgba(17,24,39,0.04);
+    }
+    .title { font-size: 16px; font-weight: 800; margin: 0 0 8px; line-height:1.35; }
+    .sources { margin: 8px 0 10px; font-size: 12px; color: var(--muted); display:flex; flex-wrap: wrap; gap: 10px; }
+    .sources a { color: var(--link); text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .content { color: #111827; font-size: 13px; line-height:1.6; }
+    .error { color:#b91c1c; font-size: 13px; }
   </style>
 </head>
 <body>
   <header>
-    <h1 id="title">AI大事件</h1>
-    <div class="sub" id="subtitle">加载中…</div>
+    <div class="masthead">
+      <div class="brand">AI 早报</div>
+      <h1 id="title">AI大事件</h1>
+    </div>
   </header>
   <main>
     <div id="err" class="error" style="display:none"></div>
     <ol id="list" class="list"></ol>
   </main>
-  <footer>
-    数据文件：<code>data.json</code>。这是静态页面，可直接放到 GitHub Pages。
-  </footer>
 
 <script>
   function esc(s){return (s??"").toString().replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")}
@@ -48,7 +64,6 @@
       const data = await res.json();
       window.__data = data;
       document.getElementById('title').textContent = (data.displayTitle || data.title || 'AI大事件');
-      document.getElementById('subtitle').textContent = `时间窗：${data.window} · 生成时间：${data.generatedAt}`;
       render();
     }catch(e){
       document.getElementById('subtitle').textContent = '加载失败';
@@ -66,17 +81,13 @@
     const root = document.getElementById('list');
     root.innerHTML = items.map(x => {
       const sources = (x.sources||[]).map(s => {
-        const name = s.name ? `<span class="tag">${esc(s.name)}</span> ` : '';
-        return `<div>${name}<a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.url)}</a></div>`;
+        const label = s.name ? `${esc(s.name)}：` : '';
+        return `<span>${label}<a href="${esc(s.url)}" target="_blank" rel="noreferrer">链接</a></span>`;
       }).join('');
 
       return `
         <li class="card">
           <div class="title">${esc(x.title)}</div>
-          <div class="meta">
-            <span class="tag">${x.lang === 'zh' ? '中文' : 'English'}</span>
-            <span class="tag">${x.type === 'policy' ? '政策/安全' : '产品/商业'}</span>
-          </div>
           <div class="sources">${sources}</div>
           <div class="content">${esc(x.summary)}</div>
         </li>

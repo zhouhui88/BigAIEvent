@@ -9,8 +9,8 @@
       "lang": "en",
       "type": "product",
       "hotness": 95,
-      "title": "Voxtral Transcribe 2 released",
-      "summary": "Mistral announced an update focused on speech transcription / speech-related capabilities. Useful for meeting notes, customer support QA, and voice assistants; check the official post for details.",
+      "title": "Voxtral Transcribe 2 发布",
+      "summary": "Mistral 发布语音转写相关更新。用途：可用于会议纪要、客服质检、语音助手等语音→文本场景（具体能力/定价以官方为准）。",
       "sources": [
         {"name": "Mistral", "url": "https://mistral.ai/news/voxtral-transcribe-2"},
         {"name": "Hacker News", "url": "https://news.ycombinator.com/"}
@@ -21,8 +21,8 @@
       "lang": "en",
       "type": "product",
       "hotness": 80,
-      "title": "Claude is a space to think",
-      "summary": "Anthropic published a post positioning Claude as a structured space for thinking and complex task work. Useful as a workflow companion for planning, writing, and multi-step reasoning.",
+      "title": "Claude：一个用于思考的空间（space to think）",
+      "summary": "Anthropic 用官方文章解释 Claude 的定位：更像一个支持结构化思考与复杂任务推进的工作台。用途：规划、写作、分步推理与任务拆解。",
       "sources": [
         {"name": "Anthropic", "url": "https://www.anthropic.com/news/claude-is-a-space-to-think"},
         {"name": "Hacker News", "url": "https://news.ycombinator.com/"}
