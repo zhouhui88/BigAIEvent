@@ -1,7 +1,7 @@
 {
   "displayTitle": "2026年2月5日 AI大事件",
   "title": "AI大事件",
-  "generatedAt": "2026-02-05 10:38 Asia/Shanghai",
+  "generatedAt": "2026-02-05 10:43 Asia/Shanghai",
   "window": "最近24–36小时",
   "items": [
     {
@@ -10,7 +10,7 @@
       "type": "product",
       "hotness": 100,
       "title": "Voxtral Transcribe 2",
-      "summary": "Mistral 更新语音转写（speech-to-text）相关能力。用途：会议纪要、客服质检、语音助手等语音→文本场景。",
+      "summary": "Mistral 更新语音转写（speech-to-text）相关能力。用途：会议纪要、客服质检、语音助手等语音→文本场景。 主要内容（节选）： Voxtral transcribes at the speed of sound. | Mistral AI Products Solutions Research Resources Pricing Company Try Studio Talk to sales Voxtral Transcribe 2 Listening... L i s t e n i n g . . . Voxtral transcribes at the speed of sound. Try Voxtral Transcribe 2 in Mistral Studio Precision diarization, real-time transcription, and a new audio playground. Today, we're releasing Voxtral Transcribe 2, two next-generation speech-to-text models with state-of-the-art transcription quality, diarization, and ultra-low latency. The family includes Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications. Voxtral Realtime is open-weights under the Apache 2.0 license. We're also launching an audio playground in Mistral Studio to test transcription instantly, powered",
       "sources": [
         {
           "name": "Hacker News",
@@ -23,12 +23,12 @@
       ]
     },
     {
-      "id": "hn-19-claude-is-a-space-to-think",
+      "id": "hn-20-claude-is-a-space-to-think",
       "lang": "en",
       "type": "product",
       "hotness": 77,
       "title": "Claude is a space to think",
-      "summary": "Anthropic 解释 Claude 的产品定位：更强调结构化思考与复杂任务推进。用途：规划、写作、分步推理与任务拆解。",
+      "summary": "Anthropic 解释 Claude 的产品定位：更强调结构化思考与复杂任务推进。用途：规划、写作、分步推理与任务拆解。 主要内容（节选）： Skip to main content Skip to footer Research Economic Futures Commitments Learn News Try Claude Announcements Claude is a space to think Feb 4, 2026 There are many good places for advertising. A conversation with Claude is not one of them. Advertising drives competition, helps people discover new products, and allows services like email and social media to be offered for free. We’ve run our own ad campaigns , and our AI models have, in turn, helped many of our customers in the advertising industry. But including ads in conversations with Claude would be incompatible with what we want Claude to be: a genuinely helpful assistant for work and for deep thinking. We want Claude to act unambiguously in our users’ interests. So we’ve made a choice: Claude will remain ad-free. Our users won’t see",
       "sources": [
         {
           "name": "Hacker News",
@@ -41,12 +41,12 @@
       ]
     },
     {
-      "id": "hn-5-ai-is-killing-b2b-saas",
+      "id": "hn-6-ai-is-killing-b2b-saas",
       "lang": "en",
       "type": "product",
       "hotness": 63,
       "title": "AI is killing B2B SaaS",
-      "summary": "观点文章讨论 AI 对传统 B2B SaaS 的冲击（定价、壁垒、产品形态）。用途：提醒 SaaS 团队重估护城河与价值交付方式。",
+      "summary": "观点文章讨论 AI 对传统 B2B SaaS 的冲击（定价、壁垒、产品形态）。用途：提醒 SaaS 团队重估护城河与价值交付方式。 主要内容（节选）： AI is Killing B2B SaaS | N’s Blog ’ s Blog N’s Blog --> AI is Killing B2B SaaS 130+ votes Namanyay Goel By Namanyay Goel Feb 4 2026 Subscribe SaaS is the most profitable business model on Earth. 1 It’s easy to understand why: build once, sell the same thing again ad infinitum, and don’t suffer any marginal costs on more sales. I have been writing software for more than half my life. In the last year itself, I’ve talked to hundreds of founders and operators in SF, from preseed to Series E companies. AI is bringing an existential threat to a lot of B2B SaaS executives: How to keep asking customers for renewal, when every customer feels they can get something better built with vibe-coded AI products? And the market is pricing it in. Morgan Stanley’s SaaS basket has lagged the Nasdaq by 40 poi",
       "sources": [
         {
           "name": "Hacker News",
@@ -59,12 +59,82 @@
       ]
     },
     {
+      "id": "jiqizhixin-1",
+      "lang": "zh",
+      "type": "product",
+      "hotness": 60,
+      "title": "美团提出全新多模态统一大模型STAR，GenEval突破0.91，破解“理解-生成”零和困局",
+      "summary": "<![CDATA[<p>2026年2月3日，由上海仪电（集团）有限公司主办，上海市先导产业促进中心、上海埃迪希科技服务有限公司承办的科学智能&ldquo;百团百项&rdquo;工程产研共创沙龙在沪圆满落幕。<strong>上海仪电（集团）有限公司副总裁刘山泉、上海市经济和信息化委员会人工智能发展处处长刘文、上海市先导产业促进中心主任郑理莹</strong>出席会议，共话AI4S新范式，共谋产业高质量发展新篇章。</p><p><img src=\"https://image.jiqizhixin.com/uploads/editor/3323f33e-14b9-4e0b-b23a-680932b5ac14/1770189343529.jpeg\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p><p>本次沙龙汇聚了来自学术界、产业界、投资界的50余位专家学者与企业代表。会议紧扣真实产业需求，旨在通过深度探索人工智能与科学研究的融合路径，推动前沿技术精准赋能实体产业转型升级，合力构筑开放、协同、高效的创新生态体系。</p><p>活动伊始，<strong>上海智能算力科技有限公司解决方案负责人王丽忱</strong>向与会嘉宾系统介绍了&ldquo;科学智能开放社区&rdquo;。科学智能开放社区由上海仪电牵头承建，以统一门户整合一站式科研工具、高质量开源模型库、智能体开发平台以及万卡级公共算力在内的关键资源与服务，为全球科学家提供开放、协同、高效的科研创新平台，显著降低AI与科研融合的门槛，加速从基础研究到产业应用的转化周期。随后，<strong>上海人工智能实验室李玉强、上海科学智能研究院关慧宇、上海创智学院郑逸宁</strong>分别介绍了面向科研领域的模型、智能体、工具的共性服务能力，共同为科学智能开放社区精准高效地连接产业难题与",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-12"
+        }
+      ]
+    },
+    {
+      "id": "jiqizhixin-2",
+      "lang": "zh",
+      "type": "product",
+      "hotness": 60,
+      "title": "ICLR 2026 | U2-BENCH：首个超大规模全场景超声多模态理解基准，开启医疗大模型新赛道",
+      "summary": "<![CDATA[<section><img data-src=\"https://mmbiz.qpic.cn/mmbiz_jpg/XLCp9HBkwLnA6AroNE959MTXRTunZ61XXLRee0gYSITrsoZwulFzX0NLS4ga2hrNibdHreZ9icQswrGIDqeD2A7g/640?wx_fmt=jpeg&from=appmsg#imgIndex=1\" data-ratio=\"0.42407407407407405\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100027374\" data-aistatus=\"1\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/35be453b-449b-46d8-ae23-76f121b110b4/640.jpeg\" data-sec-load-status=\"2\" data-report-img-idx=\"0\" alt=\"图片\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></section><p data-pm-slice=\"0 0 []\">作者丨上智院女娲生命大模型团队</p><p>编辑丨ScienceAI</p><p>在 RNA 疗法、基因调控和合成c等领域，RNA 逆折叠（RNA Inverse Folding）是至关重要的核心任务，其目标是设计出能够折叠成特定 3D 结构的 RNA 序列。如同设计一把能开启特定「基因锁」的钥匙，这要求生成的序列不仅在理论上符合要求，更需在物理上精准折叠成目标构象。</p><p>",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-10"
+        }
+      ]
+    },
+    {
+      "id": "jiqizhixin-3",
+      "lang": "zh",
+      "type": "product",
+      "hotness": 60,
+      "title": "倒反天罡：「租个人」网站爆火，AI开始雇人「跑腿」了",
+      "summary": "<![CDATA[<section><img data-src=\"https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gWic1GuW68DykycvknmG9tyBvLRsVGY4rRKCGuKKSkOqnGrvGwXxqqDxHlia88ZCbqyicswl2HC89BcZA/640?wx_fmt=png&from=appmsg#imgIndex=0\" data-ratio=\"0.5703703703703704\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503474619\" data-aistatus=\"1\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/952d91eb-f0ad-4b57-b66b-1b58b2ec74fe/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></section><p>当大多数人仍聚焦于让机器人承担端茶倒水等家务时，来自瑞士联邦理工学院（洛桑，EPFL）、美国杜克大学与葡萄牙高等理工大学的联合团队，已率先<strong>运用机器人部分替代动物开展生理学实验</strong>，旨在深入探究动物神经网络对各类智能行为的调控机制。</p><p>他们的最新研究成果 &mdash;&mdash; 题为《机器鱼连续与间歇游泳的能效与神经控制（Energy Efficiency and Neural Control of Co",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-8"
+        }
+      ]
+    },
+    {
+      "id": "jiqizhixin-4",
+      "lang": "zh",
+      "type": "policy",
+      "hotness": 60,
+      "title": "CVPR 2026 Workshop 征稿｜AdvML@CV 2026：Safety of Vision-Language Agents",
+      "summary": "<![CDATA[<p>随着AI基础设施布局速度加快，企业运维面临跨终端、全链路管理的新挑战。近日，上海合合信息科技股份有限公司旗下的AI Agent产品Chaterm推出移动端应用，同步在PC端上线&ldquo;Agent Skills&rdquo;功能，帮助云计算行业从业者解决移动场景操作受限、运维知识难以复用等难题。通过打通移动端与PC端的场景协同服务，Chaterm为运维管理向全场景、智能化方向演进提出了新的落地方案。</p><p><strong>解决远程运维难题，Chaterm移动端实现&ldquo;说话即操作&rdquo;</strong></p><p>在算力设施日益复杂的背景下，保障核心业务系统的全时运转已成为企业发展的生命线。然而，面对春节等节假日、外出差旅、日常通勤等非固定办公场景，IT部门往往面临团队分散、网络环境复杂等挑战。传统移动端运维工具受限于物理屏幕尺寸，主要以虚拟键盘为操作方式，难以支撑复杂的代码输入与多键组合操作，导致运维人员操作效率低下，在关键时刻无法进行有效应急响应。</p><p>针对这一行业痛点，Chaterm率先在移动终端管理工具中落地语音指令识别功能，让运维指令&ldquo;言出必行&rdquo;。基于&ldquo;ASR与热词增强+LLM纠错&rdquo;双层架构，Chaterm不仅能精准&ldquo;听清&rdquo;运维专业术语，更能深度&ldquo;听懂&rdquo;用户意图，将模糊的口语描述转化为准确、可执行的操作，避免了因术语别名或环境干扰导致的误操作风险。</p><p>据Chaterm团队技术人员介绍，目前，Chaterm移动端具备两种模式，在Terminal模式下，用户可以通过语音命令输入和Snippets（快捷命令），快速输入指令；在对话模式下，则可以用自然语言描述运维需求，在高铁、机场等受限环境下，也能快速完成核",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-6"
+        }
+      ]
+    },
+    {
+      "id": "jiqizhixin-5",
+      "lang": "zh",
+      "type": "product",
+      "hotness": 60,
+      "title": "ICLR 2026 | 腾讯混元团队联合 KCL 提出 WildToolBench，评估 Wild 场景下 LLM 的 Agentic 能力",
+      "summary": "<![CDATA[<p>2月3日，以&ldquo;AI时代的工作方式&rdquo;为主题的钉峰会在北京隆重举行。峰会由阿里巴巴钉钉和中关村国际共同举办，汇聚了来自制造业、农业、供应链、环保、文媒等多行业的领军企业代表、数字化先锋及专家逾三百人，深入探讨人工智能浪潮下工作方式的重塑与进化。</p><p>现场，一批北京区域企业与钉钉集中签约，共同迈入AI时代的工作方式，包括博锐尚格科技股份有限公司、天津市神州商龙科技股份有限公司、北京健坤餐饮集团、北京央视瑞安技术服务有限公司等。</p><p><strong>智能体操作系统：从</strong><strong>工具</strong><strong>到伙伴的进化</strong></p><p>钉钉华北大区总经理刘浩在致辞中指出，当前正处在AI转型的关键时间点。钉钉以解决真实问题为原点，致力于从传统的应用平台升级为面向未来的&ldquo;智能体操作系统&rdquo;（Agent OS）。他强调，AI时代的工作方式需要根本性的重新思考，即从&ldquo;人操作工具&rdquo;转向&ldquo;人调教AI&rdquo;，让智能体（Agent）成为业务执行与协同的核心单元。<img src=\"https://image.jiqizhixin.com/uploads/editor/572106a8-a4d3-428c-b800-542ff65b7bf2/%E5%9B%BE%E7%89%871.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p><p><sup>&nbsp; &nbsp; &nbsp; 钉钉华北大区总经理刘浩</sup></p><p>中关村国际控股有限公司总经理卢江表示表示，中关村国际正通过覆盖全球的创新网络，携手钉钉，表示，以AI为纽带、出海服务为桥梁，共同优化AI时代的",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-4"
+        }
+      ]
+    },
+    {
       "id": "hn-2-claude-code-connect-to-a-local-model-whe",
       "lang": "en",
       "type": "product",
       "hotness": 59,
       "title": "Claude Code: connect to a local model when your quota runs out",
-      "summary": "英文资讯：Claude Code: connect to a local model when your quota runs out。用途/影响：详见来源。",
+      "summary": "英文资讯：Claude Code: connect to a local model when your quota runs out。 主要内容（节选）： Claude Code: connect to a local model when your quota runs out - Tim Plaisted Skip to content Tim Plaisted Research and news about dev, ai, art and occasionally food Menu and widgets Blogroll @heyyeah on The Forkiverse boxc: Research and Feeds coin-operated Fluxtumblr Gochisousama Claude Code: connect to a local model when your quota runs out If you’re on one of the cheaper Anthropic plans like me, it’s a pretty common scenario when you’re deep into Claude coding an idea, to hit a daily or weekly quota limit. If you want to keep going, you can connect to a local open source model instead of Anthropic. To monitor your current quota, type: /usage Type /usage to monitor how much quota you have left and how quick you burn it. The best open source model is changing pretty frequently, but at the",
       "sources": [
         {
           "name": "Hacker News",
@@ -77,12 +147,12 @@
       ]
     },
     {
-      "id": "hn-4-claude-code-for-infrastructure",
+      "id": "hn-5-claude-code-for-infrastructure",
       "lang": "en",
       "type": "product",
       "hotness": 55,
       "title": "Claude Code for Infrastructure",
-      "summary": "英文资讯：Claude Code for Infrastructure。用途/影响：详见来源。",
+      "summary": "英文资讯：Claude Code for Infrastructure。 主要内容（节选）： fluid.sh $ fluid.sh GitHub Discord Claude Code for infrastructure. Debug, act, and audit everything Fluid does on your infrastructure. What does that mean? Fluid is a terminal agent that do work on production infrastructure like VMs/K8s cluster/etc. by making sandbox clones of the infrastructure for AI agents to work on, allowing the agents to run commands, test connections, edit files, and then generate Infra-as-code like an Ansible Playbook to be applied on production. Why not just use an LLM to generate Infrastructure-as-Code (IaC)? LLMs are great at generating Terraform, OpenTofu, Ansible, etc. but bad at guessing how production systems work. By giving access to a clone of the infrastructure, agents can explore, run commands, test things before writing the IaC, giving them better conte",
       "sources": [
         {
           "name": "Hacker News",
@@ -91,96 +161,6 @@
         {
           "name": "原文",
           "url": "https://www.fluid.sh/"
-        }
-      ]
-    },
-    {
-      "id": "hn-9-microsoft-s-copilot-chatbot-is-running-i",
-      "lang": "en",
-      "type": "product",
-      "hotness": 53,
-      "title": "Microsoft's Copilot chatbot is running into problems",
-      "summary": "媒体报道 Microsoft Copilot 在产品落地/体验上遇到挑战。影响：大厂 AI 产品从“能用”到“规模化好用”仍有鸿沟。",
-      "sources": [
-        {
-          "name": "Hacker News",
-          "url": "https://news.ycombinator.com/"
-        },
-        {
-          "name": "原文",
-          "url": "https://www.wsj.com/tech/ai/microsofts-pivotal-ai-product-is-running-into-big-problems-ce235b28"
-        }
-      ]
-    },
-    {
-      "id": "hn-14-rs-sdk-drive-runescape-with-claude-code",
-      "lang": "en",
-      "type": "product",
-      "hotness": 49,
-      "title": "RS-SDK: Drive RuneScape with Claude Code",
-      "summary": "英文资讯：RS-SDK: Drive RuneScape with Claude Code。用途/影响：详见来源。",
-      "sources": [
-        {
-          "name": "Hacker News",
-          "url": "https://news.ycombinator.com/"
-        },
-        {
-          "name": "原文",
-          "url": "https://github.com/MaxBittker/rs-sdk"
-        }
-      ]
-    },
-    {
-      "id": "hn-20-coding-agent-vms-on-nixos-with-microvm-n",
-      "lang": "en",
-      "type": "product",
-      "hotness": 48,
-      "title": "Coding Agent VMs on NixOS with Microvm.nix",
-      "summary": "英文资讯：Coding Agent VMs on NixOS with Microvm.nix。用途/影响：详见来源。",
-      "sources": [
-        {
-          "name": "Hacker News",
-          "url": "https://news.ycombinator.com/"
-        },
-        {
-          "name": "原文",
-          "url": "https://michael.stapelberg.ch/posts/2026-02-01-coding-agent-microvm-nix/"
-        }
-      ]
-    },
-    {
-      "id": "hn-22-a-real-world-benchmark-for-ai-code-revie",
-      "lang": "en",
-      "type": "product",
-      "hotness": 43,
-      "title": "A real-world benchmark for AI code review",
-      "summary": "英文资讯：A real-world benchmark for AI code review。用途/影响：详见来源。",
-      "sources": [
-        {
-          "name": "Hacker News",
-          "url": "https://news.ycombinator.com/"
-        },
-        {
-          "name": "原文",
-          "url": "https://www.qodo.ai/blog/how-we-built-a-real-world-benchmark-for-ai-code-review/"
-        }
-      ]
-    },
-    {
-      "id": "hn-15-show-hn-morph-videos-of-ai-testing-your",
-      "lang": "en",
-      "type": "product",
-      "hotness": 42,
-      "title": "Show HN: Morph – Videos of AI testing your PR, embedded in GitHub",
-      "summary": "英文资讯：Show HN: Morph – Videos of AI testing your PR, embedded in GitHub。用途/影响：详见来源。",
-      "sources": [
-        {
-          "name": "Hacker News",
-          "url": "https://news.ycombinator.com/"
-        },
-        {
-          "name": "原文",
-          "url": "https://morphllm.com/products/glance"
         }
       ]
     }

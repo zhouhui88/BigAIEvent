@@ -93,7 +93,7 @@
         <li class="card">
           <div class="title">${esc(x.title)}</div>
           <div class="sources">${sources}</div>
-          <div class="content">${esc(x.summary)}</div>
+          <div class="content">${esc(x.summary).replaceAll('\n','<br>')}</div>
         </li>
       `;
     }).join('');
