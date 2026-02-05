@@ -1,7 +1,7 @@
 {
   "displayTitle": "2026年2月5日 AI大事件",
   "title": "AI大事件",
-  "generatedAt": "2026-02-05 11:07 Asia/Shanghai",
+  "generatedAt": "2026-02-05 11:41 Asia/Shanghai",
   "window": "最近24–36小时",
   "items": [
     {
@@ -10,7 +10,7 @@
       "type": "product",
       "hotness": 100,
       "title": "Voxtral Transcribe 2",
-      "summary": "Mistral 更新语音转写（speech-to-text）相关能力。用途：会议纪要、客服质检、语音助手等语音→文本场景。 主要内容（节选）： Voxtral transcribes at the speed of sound. | Mistral AI Products Solutions Research Resources Pricing Company Try Studio Talk to sales Voxtral Transcribe 2 Listening... L i s t e n i n g . . . Voxtral transcribes at the speed of sound. Try Voxtral Transcribe 2 in Mistral Studio Precision diarization, real-time transcription, and a new audio playground. Today, we're releasing Voxtral Transcribe 2, two next-generation speech-to-text models with state-of-the-art transcription quality, diarization, and ultra-low latency. The family includes Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications. Voxtral Realtime is open-weights under the Apache 2.0 license. We're also launching an audio playground in Mistral Studio to test transcription instantly, powered",
+      "summary": "Mistral 更新语音转写（speech-to-text）相关能力。 亮点：开源权重（open-weights）、Apache 2.0 许可、支持实时（real-time）、支持说话人分离（diarization）、低延迟（low latency）",
       "sources": [
         {
           "name": "Hacker News",
@@ -23,12 +23,12 @@
       ]
     },
     {
-      "id": "hn-19-claude-is-a-space-to-think",
+      "id": "hn-20-claude-is-a-space-to-think",
       "lang": "en",
       "type": "product",
-      "hotness": 77,
+      "hotness": 78,
       "title": "Claude is a space to think",
-      "summary": "Anthropic 解释 Claude 的产品定位：更强调结构化思考与复杂任务推进。用途：规划、写作、分步推理与任务拆解。 主要内容（节选）： Skip to main content Skip to footer Research Economic Futures Commitments Learn News Try Claude Announcements Claude is a space to think Feb 4, 2026 There are many good places for advertising. A conversation with Claude is not one of them. Advertising drives competition, helps people discover new products, and allows services like email and social media to be offered for free. We’ve run our own ad campaigns , and our AI models have, in turn, helped many of our customers in the advertising industry. But including ads in conversations with Claude would be incompatible with what we want Claude to be: a genuinely helpful assistant for work and for deep thinking. We want Claude to act unambiguously in our users’ interests. So we’ve made a choice: Claude will remain ad-free. Our users won’t see",
+      "summary": "Anthropic 发布文章解释 Claude 的产品定位（space to think）。",
       "sources": [
         {
           "name": "Hacker News",
@@ -41,12 +41,30 @@
       ]
     },
     {
+      "id": "hn-28-a-real-world-benchmark-for-ai-code-revie",
+      "lang": "en",
+      "type": "product",
+      "hotness": 67,
+      "title": "A real-world benchmark for AI code review",
+      "summary": "基准/评测：提出面向 AI 代码审查（code review）的真实场景评测。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://www.qodo.ai/blog/how-we-built-a-real-world-benchmark-for-ai-code-review/"
+        }
+      ]
+    },
+    {
       "id": "hn-4-ai-is-killing-b2b-saas",
       "lang": "en",
       "type": "product",
-      "hotness": 64,
+      "hotness": 65,
       "title": "AI is killing B2B SaaS",
-      "summary": "观点文章讨论 AI 对传统 B2B SaaS 的冲击（定价、壁垒、产品形态）。用途：提醒 SaaS 团队重估护城河与价值交付方式。 主要内容（节选）： AI is Killing B2B SaaS | N’s Blog ’ s Blog N’s Blog --> AI is Killing B2B SaaS 130+ votes Namanyay Goel By Namanyay Goel Feb 4 2026 Subscribe SaaS is the most profitable business model on Earth. 1 It’s easy to understand why: build once, sell the same thing again ad infinitum, and don’t suffer any marginal costs on more sales. I have been writing software for more than half my life. In the last year itself, I’ve talked to hundreds of founders and operators in SF, from preseed to Series E companies. AI is bringing an existential threat to a lot of B2B SaaS executives: How to keep asking customers for renewal, when every customer feels they can get something better built with vibe-coded AI products? And the market is pricing it in. Morgan Stanley’s SaaS basket has lagged the Nasdaq by 40 poi",
+      "summary": "观点文章讨论 AI 对传统 B2B SaaS 的冲击。",
       "sources": [
         {
           "name": "Hacker News",
@@ -62,9 +80,9 @@
       "id": "hn-3-claude-code-connect-to-a-local-model-whe",
       "lang": "en",
       "type": "product",
-      "hotness": 60,
+      "hotness": 61,
       "title": "Claude Code: connect to a local model when your quota runs out",
-      "summary": "英文资讯：Claude Code: connect to a local model when your quota runs out。 主要内容（节选）： Claude Code: connect to a local model when your quota runs out - Tim Plaisted Skip to content Tim Plaisted Research and news about dev, ai, art and occasionally food Menu and widgets Blogroll @heyyeah on The Forkiverse boxc: Research and Feeds coin-operated Fluxtumblr Gochisousama Claude Code: connect to a local model when your quota runs out If you’re on one of the cheaper Anthropic plans like me, it’s a pretty common scenario when you’re deep into Claude coding an idea, to hit a daily or weekly quota limit. If you want to keep going, you can connect to a local open source model instead of Anthropic. To monitor your current quota, type: /usage Type /usage to monitor how much quota you have left and how quick you burn it. The best open source model is changing pretty frequently, but at the",
+      "summary": "经验帖：Claude Code 额度用尽时，如何切换连接本地开源模型继续工作。 亮点：可切换本地/开源模型",
       "sources": [
         {
           "name": "Hacker News",
@@ -81,12 +99,12 @@
       "lang": "zh",
       "type": "product",
       "hotness": 60,
-      "title": "美团提出全新多模态统一大模型STAR，GenEval突破0.91，破解“理解-生成”零和困局",
-      "summary": "<![CDATA[<p>2026年2月3日，由上海仪电（集团）有限公司主办，上海市先导产业促进中心、上海埃迪希科技服务有限公司承办的科学智能&ldquo;百团百项&rdquo;工程产研共创沙龙在沪圆满落幕。<strong>上海仪电（集团）有限公司副总裁刘山泉、上海市经济和信息化委员会人工智能发展处处长刘文、上海市先导产业促进中心主任郑理莹</strong>出席会议，共话AI4S新范式，共谋产业高质量发展新篇章。</p><p><img src=\"https://image.jiqizhixin.com/uploads/editor/3323f33e-14b9-4e0b-b23a-680932b5ac14/1770189343529.jpeg\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p><p>本次沙龙汇聚了来自学术界、产业界、投资界的50余位专家学者与企业代表。会议紧扣真实产业需求，旨在通过深度探索人工智能与科学研究的融合路径，推动前沿技术精准赋能实体产业转型升级，合力构筑开放、协同、高效的创新生态体系。</p><p>活动伊始，<strong>上海智能算力科技有限公司解决方案负责人王丽忱</strong>向与会嘉宾系统介绍了&ldquo;科学智能开放社区&rdquo;。科学智能开放社区由上海仪电牵头承建，以统一门户整合一站式科研工具、高质量开源模型库、智能体开发平台以及万卡级公共算力在内的关键资源与服务，为全球科学家提供开放、协同、高效的科研创新平台，显著降低AI与科研融合的门槛，加速从基础研究到产业应用的转化周期。随后，<strong>上海人工智能实验室李玉强、上海科学智能研究院关慧宇、上海创智学院郑逸宁</strong>分别介绍了面向科研领域的模型、智能体、工具的共性服务能力，共同为科学智能开放社区精准高效地连接产业难题与",
+      "title": "史上首次！米兰冬奥基于阿里千问打造奥运官方大模型",
+      "summary": "你有没有想过一个问题：为什么和 AI 对话，总觉得少了点「人味儿」。 不是它回答得不够准确，也不是它理解不了你的意思，而是每次交互都很机械。 你问一句，等它答完，然后突然画面一转，对不起，它对现实世界的观察仿佛瞬间「掉线」。那几秒里，AI 仿佛顺手关掉了眼睛和耳朵，陷入一种「间歇性失明失聪」的状态，根本不能根据眼前瞬息万变的画面实时调整自己的反应。 这种感觉，就像两个人在用对讲机聊天。你按住通话键说话时，对方听不见；对方说话时，你也插不上嘴。一次只能一个方向传递信息。 这不是产品设计问题，而是技术限制。因为绝大多数 AI 都在用单工模式运行，用起来感觉很死板。 2 月 4 日，面壁开源了行业首个全双工全模态大模型 MiniCPM-o 4.5，相比已有多模态模型，MiniCPM-o 4.5 首次实现了「边看边听边说」以及「自主交互」的全模态能力，模型不再只是把视觉、语音作为静态输入处理，而是能够在实时、多模态信息流中持续感知环境变化，并在输出的同时保持对外界的理解。 目前，MiniCPM-o 4.5 已在 GitHub、Hugging Face 等平台开源： 开源地址：https://github.com/OpenBMB/MiniCPM-o Hugging Face: https://huggingface.co/openbmb/MiniCPM-o-4_5 虽然参数量只有 9B，MiniCPM-o 4.5 却在全模态、视觉理解、文档解析、语音理解和生成、声音克隆等方面，均做到了全模态模型 SOTA 水平。在涵盖 8 个主流评测基准的 OpenCompass 综合评估中得分 77.6 。 MiniCPM-o 4.5 在 MMBench（综合视觉理解）、MathVista（数学推理）及 OmniDocBench（文档解析）等关键任务上击败了顶级闭源模型 Gemini 2.5 Fl",
       "sources": [
         {
           "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-12"
+          "url": "https://www.jiqizhixin.com/articles/2026-02-05"
         }
       ]
     },
@@ -95,12 +113,12 @@
       "lang": "zh",
       "type": "product",
       "hotness": 60,
-      "title": "ICLR 2026 | U2-BENCH：首个超大规模全场景超声多模态理解基准，开启医疗大模型新赛道",
-      "summary": "<![CDATA[<section><img data-src=\"https://mmbiz.qpic.cn/mmbiz_jpg/XLCp9HBkwLnA6AroNE959MTXRTunZ61XXLRee0gYSITrsoZwulFzX0NLS4ga2hrNibdHreZ9icQswrGIDqeD2A7g/640?wx_fmt=jpeg&from=appmsg#imgIndex=1\" data-ratio=\"0.42407407407407405\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100027374\" data-aistatus=\"1\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/35be453b-449b-46d8-ae23-76f121b110b4/640.jpeg\" data-sec-load-status=\"2\" data-report-img-idx=\"0\" alt=\"图片\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></section><p data-pm-slice=\"0 0 []\">作者丨上智院女娲生命大模型团队</p><p>编辑丨ScienceAI</p><p>在 RNA 疗法、基因调控和合成c等领域，RNA 逆折叠（RNA Inverse Folding）是至关重要的核心任务，其目标是设计出能够折叠成特定 3D 结构的 RNA 序列。如同设计一把能开启特定「基因锁」的钥匙，这要求生成的序列不仅在理论上符合要求，更需在物理上精准折叠成目标构象。</p><p>",
+      "title": "第二代AI预训练范式：预测下个物理状态",
+      "summary": "近日，美团推出全新多模态统一大模型方案 STAR（STacked AutoRegressive Scheme for Unified Multimodal Learning），凭借创新的 \"堆叠自回归架构 + 任务递进训练\" 双核心设计，实现了 \"理解能力不打折、生成能力达顶尖\" 的双重突破。 在 GenEval（文本 - 图像对齐）、DPG-Bench（复杂场景生成）、ImgEdit（图像编辑）等 benchmark 中，STAR 实现了 SOTA 性能；用最简训练逻辑与紧凑模型设计让统一多模态大模型真正走向工业级落地。 论文标题：STAR: Stacked AutoRegressive Scheme for Unified Multimodal Learning 论文链接：https://arxiv.org/pdf/2512.13752 项目主页：https://star-mm-ai.github.io 代码地址：https://github.com/MM-MVR/STAR 关键词：统一多模态、堆叠自回归、任务渐进式训练 一、行业痛点：统一多模态大模型的 “能力诅咒” 在通向 AGI 的进程中，将 “视觉理解” 与 “图像生成” 统一于单一参数空间被视为多模态大模型的圣杯，然而实践层面却长期受制于 “能力诅咒”，具体表现为三重矛盾。 1. 优化目标互斥 —— 语义对齐与像素保真的零和博弈 理解任务的核心是 \"语义对齐与逻辑推理\"—— 比如识别图像中的物体、回答图文相关问题，需要模型精准捕捉跨模态的语义关联；而生成任务的核心是 \"像素保真与创意表达\"—— 比如根据文本描述生成高清图像，需要模型兼顾细节还原与内容连贯性。两者的优化目标、特征空间显著不同，导致联合训练陷入零和博弈：强化生成能力，理解准确率会下降；深耕理解任务，生成图像的清晰度、语义一致性会打折。 2. 训练范",
       "sources": [
         {
           "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-10"
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-13"
         }
       ]
     },
@@ -109,26 +127,26 @@
       "lang": "zh",
       "type": "product",
       "hotness": 60,
-      "title": "倒反天罡：「租个人」网站爆火，AI开始雇人「跑腿」了",
-      "summary": "<![CDATA[<section><img data-src=\"https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gWic1GuW68DykycvknmG9tyBvLRsVGY4rRKCGuKKSkOqnGrvGwXxqqDxHlia88ZCbqyicswl2HC89BcZA/640?wx_fmt=png&from=appmsg#imgIndex=0\" data-ratio=\"0.5703703703703704\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503474619\" data-aistatus=\"1\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/952d91eb-f0ad-4b57-b66b-1b58b2ec74fe/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></section><p>当大多数人仍聚焦于让机器人承担端茶倒水等家务时，来自瑞士联邦理工学院（洛桑，EPFL）、美国杜克大学与葡萄牙高等理工大学的联合团队，已率先<strong>运用机器人部分替代动物开展生理学实验</strong>，旨在深入探究动物神经网络对各类智能行为的调控机制。</p><p>他们的最新研究成果 &mdash;&mdash; 题为《机器鱼连续与间歇游泳的能效与神经控制（Energy Efficiency and Neural Control of Co",
+      "title": "产研协同 智启未来：科学智能“百团百项”工程产研共创沙龙在沪顺利举行",
+      "summary": "1. 医疗AI的深水区：从通用视觉到超声专业理解 超声成像（Ultrasound）作为全球医疗中应用最广泛的影像手段之一，在妇产科、急诊及心脏病学等场景中具有不可替代的地位。然而，与 CT / MRI 等模态相比，超声影像的自动理解长期面临更高门槛： 操作依赖性强 ：超声影像受操作者手法影响，质量波动大、伪影多 。 空间关系复杂 ：不同于 CT/MRI 的静态切片，超声呈现的是动态的、具有强空间上下文关系的结构 。 评测体系缺失 ：虽然通用视觉大模型（LVLMs）如 GPT-4V、Gemini 表现惊人，其在超声这一高专业度场景下的能力，长期缺乏系统、可复现的评估体系。 在此背景下，U2-BENCH 被提出，作为首个系统性评估LVLMs在超声领域能力的深度基准，涵盖了分类、检测、回归及文本生成四大任务维度。 2. 核心 设计 ：全谱系解剖覆盖与临床启发式任务 U2-BENCH的核心价值在于其高度的临床相关性和严密的构建流程： 2.1 超大规模、多来源的真实临床数据 广度覆盖 ：汇集了来自 40 个授权数据集的 7,241 个案例 ，跨越 15 个解剖区域 （如胎儿、心脏、乳腺、甲状腺等） 。 深度场景 ：涵盖 50 个临床应用场景 ，确保了评估结果能真实反映模型在医疗一线的能力 。 2.2 四级能力分解 ， 八项临床任务 U2-BENCH 将“超声理解”拆解为四个能力层级、八项具体任务： 分类任务 ：疾病诊断（DD）、标准切面识别与质量评估（VRA） 。 检测任务 ：病灶定位（LL）、器官检测（OD）、关键点检测（KD） 。 回归任务 ：临床数值估计（CVE，如射血分数、脂肪肝百分比） 。 生成任务 ：结构化报告生成（RG）、解剖描述生成（CG） 。 3. 实验验证：SOTA 模型的 能力 边界 U2-BENCH上系统评测了 23个 领先 视觉语言模型（包括 GPT-5",
       "sources": [
         {
           "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-8"
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-11"
         }
       ]
     },
     {
       "id": "jiqizhixin-4",
       "lang": "zh",
-      "type": "policy",
+      "type": "product",
       "hotness": 60,
-      "title": "CVPR 2026 Workshop 征稿｜AdvML@CV 2026：Safety of Vision-Language Agents",
-      "summary": "<![CDATA[<p>随着AI基础设施布局速度加快，企业运维面临跨终端、全链路管理的新挑战。近日，上海合合信息科技股份有限公司旗下的AI Agent产品Chaterm推出移动端应用，同步在PC端上线&ldquo;Agent Skills&rdquo;功能，帮助云计算行业从业者解决移动场景操作受限、运维知识难以复用等难题。通过打通移动端与PC端的场景协同服务，Chaterm为运维管理向全场景、智能化方向演进提出了新的落地方案。</p><p><strong>解决远程运维难题，Chaterm移动端实现&ldquo;说话即操作&rdquo;</strong></p><p>在算力设施日益复杂的背景下，保障核心业务系统的全时运转已成为企业发展的生命线。然而，面对春节等节假日、外出差旅、日常通勤等非固定办公场景，IT部门往往面临团队分散、网络环境复杂等挑战。传统移动端运维工具受限于物理屏幕尺寸，主要以虚拟键盘为操作方式，难以支撑复杂的代码输入与多键组合操作，导致运维人员操作效率低下，在关键时刻无法进行有效应急响应。</p><p>针对这一行业痛点，Chaterm率先在移动终端管理工具中落地语音指令识别功能，让运维指令&ldquo;言出必行&rdquo;。基于&ldquo;ASR与热词增强+LLM纠错&rdquo;双层架构，Chaterm不仅能精准&ldquo;听清&rdquo;运维专业术语，更能深度&ldquo;听懂&rdquo;用户意图，将模糊的口语描述转化为准确、可执行的操作，避免了因术语别名或环境干扰导致的误操作风险。</p><p>据Chaterm团队技术人员介绍，目前，Chaterm移动端具备两种模式，在Terminal模式下，用户可以通过语音命令输入和Snippets（快捷命令），快速输入指令；在对话模式下，则可以用自然语言描述运维需求，在高铁、机场等受限环境下，也能快速完成核",
+      "title": "突破RNA设计瓶颈，上智院联合复旦、上交提出全球首个强化学习与潜扩散融合框架SOLD",
+      "summary": "编辑｜张倩 人给 AI 打工的一天，居然这么快就来了。 最近，一个名叫「rentahuman.ai」的网站上线了，它被定位为「AI 的肉身层」。众所周知，AI 没有身体，虽然机器人已经在开发了，但现阶段还不太好用。因此，在一些需要身体的场合，比如取货送货、活动签到、实地勘察、餐厅试吃、参加线下会议，AI 就得找个人替自己跑一趟，这就是网站的设计初衷。 通过 MCP 协议或 REST API，AI 可以像调用工具一样搜索、预订并雇佣人类来完成线下任务 。 支持的智能体类型如下： 据网站开发者 @AlexanderTw33ts 透露，网站上线第一晚就有超过 130 人报名参加，其中还包括人工智能初创公司的创始人和首席执行官。而在上线不到 48 个小时的时间里，可用的人类劳动力就突破了 1 万，现在更是超过了 2 万。当然，这里面可能大部分都是看热闹的。 对于注册成为「跑腿」的人类来说，网站的规则也比较友好，允许人类自己设置时薪，还不需要闲聊。 在网站上，我们可以看到所有可用人力的列表。他们来自世界各地的不同国家，设定的时薪从十几美元到几十美元不等。 点开人物资料卡片，我们可以看到某个人类的具体信息，比如定位、服务半径等。 从网站上，我们还可以看到一些已经发布的任务，比如拍一张人工智能永远看不到的照片、试吃新餐厅、从市中心的美国邮政局领取包裹、检查 API_Keys…… 被雇佣检查 API_Keys 的人类感慨地说：这个时代太诡异了，人类居然成了智能体的副驾。 当然，也有一些比较抽象的任务，比如举牌子，牌子上写着「AI 付钱让我举这个牌子」。 这个网站让我们再次看到了 MCP 的价值。 但是，该网站的出现也引发了一些疑问，比如智能体要怎么付钱？目前发布任务的到底是智能体还是背后的人类金主？这是不是继 Moltbook 之后的另一场炒作？ 还有个问题更有意思：AI 要怎么确认人类保",
       "sources": [
         {
           "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-6"
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-9"
         }
       ]
     },
@@ -137,30 +155,12 @@
       "lang": "zh",
       "type": "product",
       "hotness": 60,
-      "title": "ICLR 2026 | 腾讯混元团队联合 KCL 提出 WildToolBench，评估 Wild 场景下 LLM 的 Agentic 能力",
-      "summary": "<![CDATA[<p>2月3日，以&ldquo;AI时代的工作方式&rdquo;为主题的钉峰会在北京隆重举行。峰会由阿里巴巴钉钉和中关村国际共同举办，汇聚了来自制造业、农业、供应链、环保、文媒等多行业的领军企业代表、数字化先锋及专家逾三百人，深入探讨人工智能浪潮下工作方式的重塑与进化。</p><p>现场，一批北京区域企业与钉钉集中签约，共同迈入AI时代的工作方式，包括博锐尚格科技股份有限公司、天津市神州商龙科技股份有限公司、北京健坤餐饮集团、北京央视瑞安技术服务有限公司等。</p><p><strong>智能体操作系统：从</strong><strong>工具</strong><strong>到伙伴的进化</strong></p><p>钉钉华北大区总经理刘浩在致辞中指出，当前正处在AI转型的关键时间点。钉钉以解决真实问题为原点，致力于从传统的应用平台升级为面向未来的&ldquo;智能体操作系统&rdquo;（Agent OS）。他强调，AI时代的工作方式需要根本性的重新思考，即从&ldquo;人操作工具&rdquo;转向&ldquo;人调教AI&rdquo;，让智能体（Agent）成为业务执行与协同的核心单元。<img src=\"https://image.jiqizhixin.com/uploads/editor/572106a8-a4d3-428c-b800-542ff65b7bf2/%E5%9B%BE%E7%89%871.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p><p><sup>&nbsp; &nbsp; &nbsp; 钉钉华北大区总经理刘浩</sup></p><p>中关村国际控股有限公司总经理卢江表示表示，中关村国际正通过覆盖全球的创新网络，携手钉钉，表示，以AI为纽带、出海服务为桥梁，共同优化AI时代的",
+      "title": "从斑马鱼到机器鱼：机器人实验重塑神经行为研究",
+      "summary": "IEEE/CVF 计算机视觉与模式识别会议 CVPR 2026 将于 2026年6月3日–6月7日 在美国科罗拉多州丹佛举办。我们将在 CVPR 期间举办 第六届对抗机器学习计算机视觉研讨会（6th AdvML@CV），Workshop 预计安排在 6月3日或6月4日。 本届主题聚焦：Safety of Vision-Language Agents（视觉-语言智能体安全）。 主题聚焦：视觉-语言智能体的安全与鲁棒性 多模态基础模型推动了视觉理解、生成与推理能力的跃迁，也让 Vision-Language Agents（视觉-语言智能体） 迅速成为“感知—语言推理—行动规划”一体化的新范式。 但随着智能体自主性增强，攻击面也从传统像素级扰动扩展到更复杂的安全风险：例如 对抗提示（adversarial prompts）、指令注入（instruction injection）、jailbreak 操控 等，它们可能扰乱推理链条、误导感知决策，甚至诱发危险行为。 我们希望通过本次 Workshop，汇聚计算机视觉、多模态学习与 AI Safety 社区的研究者与工程实践者，共同推进安全、鲁棒、可信的视觉-语言智能体研究与落地。 论文征稿 本次研讨会诚邀与以下主题相关（但不限于）的投稿： •Attack and defense on vision-language agents •Datasets and benchmarks that could evaluate vision-language agents •Adversarial / Jailbreak attacks on vision-language agents •Improving the robustness of agents or deep learning systems •Interpreting and",
       "sources": [
         {
           "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-4"
-        }
-      ]
-    },
-    {
-      "id": "hn-5-claude-code-for-infrastructure",
-      "lang": "en",
-      "type": "product",
-      "hotness": 55,
-      "title": "Claude Code for Infrastructure",
-      "summary": "英文资讯：Claude Code for Infrastructure。 主要内容（节选）： fluid.sh $ fluid.sh GitHub Discord Claude Code for infrastructure. Debug, act, and audit everything Fluid does on your infrastructure. What does that mean? Fluid is a terminal agent that do work on production infrastructure like VMs/K8s cluster/etc. by making sandbox clones of the infrastructure for AI agents to work on, allowing the agents to run commands, test connections, edit files, and then generate Infra-as-code like an Ansible Playbook to be applied on production. Why not just use an LLM to generate Infrastructure-as-Code (IaC)? LLMs are great at generating Terraform, OpenTofu, Ansible, etc. but bad at guessing how production systems work. By giving access to a clone of the infrastructure, agents can explore, run commands, test things before writing the IaC, giving them better conte",
-      "sources": [
-        {
-          "name": "Hacker News",
-          "url": "https://news.ycombinator.com/"
-        },
-        {
-          "name": "原文",
-          "url": "https://www.fluid.sh/"
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-7"
         }
       ]
     }

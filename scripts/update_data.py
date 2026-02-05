@@ -87,21 +87,75 @@ def normalize_ws(s: str) -> str:
 
 
 def html_to_text(html: str, limit_chars: int = 4000) -> str:
+    # unwrap CDATA
+    html = re.sub(r"^\s*<!\[CDATA\[", "", html)
+    html = re.sub(r"\]\]>\s*$", "", html)
+
     # remove scripts/styles
     html = re.sub(r"<script[\s\S]*?</script>", " ", html, flags=re.I)
     html = re.sub(r"<style[\s\S]*?</style>", " ", html, flags=re.I)
+
+    # drop common boilerplate blocks
+    html = re.sub(r"<nav[\s\S]*?</nav>", " ", html, flags=re.I)
+    html = re.sub(r"<header[\s\S]*?</header>", " ", html, flags=re.I)
+    html = re.sub(r"<footer[\s\S]*?</footer>", " ", html, flags=re.I)
+
     # replace breaks
     html = re.sub(r"<br\s*/?>", "\n", html, flags=re.I)
     html = re.sub(r"</p>|</div>|</li>|</h\d>", "\n", html, flags=re.I)
-    # strip tags
+
+    # First unescape so escaped HTML becomes real tags
+    html = unescape(html)
+
+    # strip tags (pass 1)
     text = re.sub(r"<[^>]+>", " ", html)
+    # unescape again in case of nested escaping
     text = unescape(text)
+    # strip tags (pass 2)
+    text = re.sub(r"<[^>]+>", " ", text)
+
+    # normalize whitespace
     text = re.sub(r"[ \t\r\f\v]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     text = text.strip()
+
     if len(text) > limit_chars:
         text = text[:limit_chars]
     return text
+
+
+def _extract_main_html(raw: str) -> str:
+    # Prefer <article> or <main> blocks to reduce navigation noise
+    m = re.search(r"<article[\s\S]*?</article>", raw, flags=re.I)
+    if m:
+        return m.group(0)
+    m = re.search(r"<main[\s\S]*?</main>", raw, flags=re.I)
+    if m:
+        return m.group(0)
+    return raw
+
+
+def _cleanup_excerpt(text: str) -> str:
+    # Remove common boilerplate phrases
+    drop_phrases = [
+        "skip to main content",
+        "skip to content",
+        "skip to footer",
+        "menu and widgets",
+        "subscribe",
+        "privacy",
+        "terms",
+    ]
+    tl = text
+    for p in drop_phrases:
+        tl = re.sub(re.escape(p), " ", tl, flags=re.I)
+
+    # Remove repeated UI words
+    tl = re.sub(r"\b(products?|solutions?|pricing|company|resources?)\b", " ", tl, flags=re.I)
+    tl = normalize_ws(tl)
+
+    # Keep a compact excerpt
+    return tl[:600]
 
 
 def extract_excerpt_from_url(url: str) -> Optional[str]:
@@ -110,16 +164,14 @@ def extract_excerpt_from_url(url: str) -> Optional[str]:
     except Exception:
         return None
 
-    # very small pages or paywalls may still be useful; extract text anyway
-    text = html_to_text(raw, limit_chars=5000)
-    text = normalize_ws(text)
+    main_html = _extract_main_html(raw)
+    text = html_to_text(main_html, limit_chars=8000)
+    text = _cleanup_excerpt(text)
 
-    # Heuristics: pick first ~700 chars after title-ish noise.
-    # If content too short, treat as failure.
-    if len(text) < 200:
+    if len(text) < 160:
         return None
 
-    return text[:800]
+    return text
 
 
 @dataclass
@@ -145,15 +197,21 @@ def classify_type(text: str) -> str:
 def zh_template(title: str) -> str:
     tl = title.lower()
     if "voxtral" in tl and "transcribe" in tl:
-        return "Mistral 更新语音转写（speech-to-text）相关能力。用途：会议纪要、客服质检、语音助手等语音→文本场景。"
+        return "Mistral 更新语音转写（speech-to-text）相关能力。"
     if "space to think" in tl:
-        return "Anthropic 解释 Claude 的产品定位：更强调结构化思考与复杂任务推进。用途：规划、写作、分步推理与任务拆解。"
+        return "Anthropic 发布文章解释 Claude 的产品定位（space to think）。"
     if "copilot" in tl and "problem" in tl:
-        return "媒体报道 Microsoft Copilot 在产品落地/体验上遇到挑战。影响：AI 产品从“能用”到“规模化好用”仍有鸿沟。"
+        return "媒体报道 Microsoft Copilot 在产品落地/体验上遇到挑战。"
     if "guardrails" in tl and "governance" in tl and "agent" in tl:
-        return "讨论如何用“边界治理”而非纯提示词来管控 agentic systems（权限、工具、数据、审批）。用途：企业上线 AI Agent 的安全清单。"
+        return "讨论如何用“边界治理”而非纯提示词来管控 agentic systems。"
     if "ai is killing" in tl and "saas" in tl:
-        return "观点文章讨论 AI 对传统 B2B SaaS 的冲击（定价、壁垒、产品形态）。用途：提醒 SaaS 团队重估护城河与价值交付方式。"
+        return "观点文章讨论 AI 对传统 B2B SaaS 的冲击。"
+    if "connect to a local model" in tl and "claude code" in tl:
+        return "经验帖：Claude Code 额度用尽时，如何切换连接本地开源模型继续工作。"
+    if "claude code for infrastructure" in tl:
+        return "工具介绍：用 Claude Code 辅助基础设施运维（先在沙箱/克隆环境验证，再生成 IaC）。"
+    if "benchmark" in tl and "code review" in tl:
+        return "基准/评测：提出面向 AI 代码审查（code review）的真实场景评测。"
     return ""
 
 
@@ -167,15 +225,38 @@ def build_detailed_summary(*, title: str, lang: str, original_url: Optional[str]
         excerpt = extract_excerpt_from_url(original_url)
 
     if excerpt:
-        # Keep proper nouns; show excerpt (might be English) but add Chinese framing.
-        head = base if base else f"英文资讯：{title}。"
-        return normalize_ws(
-            head
-            + "\n\n"
-            + "主要内容（节选）："
-            + "\n"
-            + excerpt
-        )
+        # Prefer Chinese framing + extract highlights.
+        head = base if base else ("" if lang == "zh" else f"英文资讯：{title}。")
+
+        highlights = []
+        exl = excerpt.lower()
+        if "open-weights" in exl or "open weights" in exl:
+            highlights.append("开源权重（open-weights）")
+        if "apache" in exl:
+            highlights.append("Apache 2.0 许可")
+        if "real-time" in exl or "realtime" in exl:
+            highlights.append("支持实时（real-time）")
+        if "diarization" in exl:
+            highlights.append("支持说话人分离（diarization）")
+        if "low latency" in exl:
+            highlights.append("低延迟（low latency）")
+        if "ad-free" in exl or "ad free" in exl:
+            highlights.append("明确不引入广告（ad-free）")
+        if "infrastructure" in exl or "terraform" in exl or "ansible" in exl:
+            highlights.append("面向基础设施/IaC（Terraform/Ansible）")
+        if "local model" in exl or "open source model" in exl:
+            highlights.append("可切换本地/开源模型")
+
+        hl_line = ("亮点：" + "、".join(highlights)) if highlights else ""
+
+        # For EN: do NOT dump raw English excerpt into the card (too noisy). Use highlights only.
+        if lang == "en":
+            parts = [p for p in [head, hl_line] if p]
+            return normalize_ws("\n".join(parts))
+
+        # For ZH: show a compact excerpt (already Chinese)
+        parts = [p for p in [head, hl_line] if p]
+        return normalize_ws("\n".join(parts) + ("\n\n要点摘录：\n" + excerpt if excerpt else ""))
 
     if rss_fallback:
         fb = normalize_ws(html_to_text(rss_fallback, limit_chars=800))
@@ -183,9 +264,11 @@ def build_detailed_summary(*, title: str, lang: str, original_url: Optional[str]
             head = base if base else ("" if lang == "zh" else f"英文资讯：{title}。")
             return normalize_ws(head + ("\n\n" if head else "") + fb)
 
-    # last resort
+    # last resort (Chinese)
     if base:
-        return base
+        return base + "（建议点来源查看原文）"
+    if lang == "en":
+        return f"英文报道：{title}（建议点来源查看原文）"
     return "详见来源。"
 
 
