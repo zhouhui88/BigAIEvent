@@ -1,7 +1,7 @@
 {
   "displayTitle": "2026年2月5日 AI大事件",
   "title": "AI大事件",
-  "generatedAt": "2026-02-05 10:43 Asia/Shanghai",
+  "generatedAt": "2026-02-05 11:07 Asia/Shanghai",
   "window": "最近24–36小时",
   "items": [
     {
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "id": "hn-20-claude-is-a-space-to-think",
+      "id": "hn-19-claude-is-a-space-to-think",
       "lang": "en",
       "type": "product",
       "hotness": 77,
@@ -41,10 +41,10 @@
       ]
     },
     {
-      "id": "hn-6-ai-is-killing-b2b-saas",
+      "id": "hn-4-ai-is-killing-b2b-saas",
       "lang": "en",
       "type": "product",
-      "hotness": 63,
+      "hotness": 64,
       "title": "AI is killing B2B SaaS",
       "summary": "观点文章讨论 AI 对传统 B2B SaaS 的冲击（定价、壁垒、产品形态）。用途：提醒 SaaS 团队重估护城河与价值交付方式。 主要内容（节选）： AI is Killing B2B SaaS | N’s Blog ’ s Blog N’s Blog --> AI is Killing B2B SaaS 130+ votes Namanyay Goel By Namanyay Goel Feb 4 2026 Subscribe SaaS is the most profitable business model on Earth. 1 It’s easy to understand why: build once, sell the same thing again ad infinitum, and don’t suffer any marginal costs on more sales. I have been writing software for more than half my life. In the last year itself, I’ve talked to hundreds of founders and operators in SF, from preseed to Series E companies. AI is bringing an existential threat to a lot of B2B SaaS executives: How to keep asking customers for renewal, when every customer feels they can get something better built with vibe-coded AI products? And the market is pricing it in. Morgan Stanley’s SaaS basket has lagged the Nasdaq by 40 poi",
       "sources": [
@@ -55,6 +55,24 @@
         {
           "name": "原文",
           "url": "https://nmn.gl/blog/ai-killing-b2b-saas"
+        }
+      ]
+    },
+    {
+      "id": "hn-3-claude-code-connect-to-a-local-model-whe",
+      "lang": "en",
+      "type": "product",
+      "hotness": 60,
+      "title": "Claude Code: connect to a local model when your quota runs out",
+      "summary": "英文资讯：Claude Code: connect to a local model when your quota runs out。 主要内容（节选）： Claude Code: connect to a local model when your quota runs out - Tim Plaisted Skip to content Tim Plaisted Research and news about dev, ai, art and occasionally food Menu and widgets Blogroll @heyyeah on The Forkiverse boxc: Research and Feeds coin-operated Fluxtumblr Gochisousama Claude Code: connect to a local model when your quota runs out If you’re on one of the cheaper Anthropic plans like me, it’s a pretty common scenario when you’re deep into Claude coding an idea, to hit a daily or weekly quota limit. If you want to keep going, you can connect to a local open source model instead of Anthropic. To monitor your current quota, type: /usage Type /usage to monitor how much quota you have left and how quick you burn it. The best open source model is changing pretty frequently, but at the",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/"
         }
       ]
     },
@@ -125,24 +143,6 @@
         {
           "name": "机器之心",
           "url": "https://www.jiqizhixin.com/articles/2026-02-04-4"
-        }
-      ]
-    },
-    {
-      "id": "hn-2-claude-code-connect-to-a-local-model-whe",
-      "lang": "en",
-      "type": "product",
-      "hotness": 59,
-      "title": "Claude Code: connect to a local model when your quota runs out",
-      "summary": "英文资讯：Claude Code: connect to a local model when your quota runs out。 主要内容（节选）： Claude Code: connect to a local model when your quota runs out - Tim Plaisted Skip to content Tim Plaisted Research and news about dev, ai, art and occasionally food Menu and widgets Blogroll @heyyeah on The Forkiverse boxc: Research and Feeds coin-operated Fluxtumblr Gochisousama Claude Code: connect to a local model when your quota runs out If you’re on one of the cheaper Anthropic plans like me, it’s a pretty common scenario when you’re deep into Claude coding an idea, to hit a daily or weekly quota limit. If you want to keep going, you can connect to a local open source model instead of Anthropic. To monitor your current quota, type: /usage Type /usage to monitor how much quota you have left and how quick you burn it. The best open source model is changing pretty frequently, but at the",
-      "sources": [
-        {
-          "name": "Hacker News",
-          "url": "https://news.ycombinator.com/"
-        },
-        {
-          "name": "原文",
-          "url": "https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/"
         }
       ]
     },
