@@ -1,7 +1,7 @@
 {
   "displayTitle": "2026年2月5日 AI大事件",
   "title": "AI大事件",
-  "generatedAt": "2026-02-05 10:35 Asia/Shanghai",
+  "generatedAt": "2026-02-05 10:38 Asia/Shanghai",
   "window": "最近24–36小时",
   "items": [
     {
@@ -10,7 +10,7 @@
       "type": "product",
       "hotness": 100,
       "title": "Voxtral Transcribe 2",
-      "summary": "英文报道：Voxtral Transcribe 2。用途/影响：详见来源链接。",
+      "summary": "Mistral 更新语音转写（speech-to-text）相关能力。用途：会议纪要、客服质检、语音助手等语音→文本场景。",
       "sources": [
         {
           "name": "Hacker News",
@@ -23,12 +23,12 @@
       ]
     },
     {
-      "id": "hn-18-claude-is-a-space-to-think",
+      "id": "hn-19-claude-is-a-space-to-think",
       "lang": "en",
       "type": "product",
       "hotness": 77,
       "title": "Claude is a space to think",
-      "summary": "英文报道：Claude is a space to think。用途/影响：详见来源链接。",
+      "summary": "Anthropic 解释 Claude 的产品定位：更强调结构化思考与复杂任务推进。用途：规划、写作、分步推理与任务拆解。",
       "sources": [
         {
           "name": "Hacker News",
@@ -46,7 +46,7 @@
       "type": "product",
       "hotness": 63,
       "title": "AI is killing B2B SaaS",
-      "summary": "英文报道：AI is killing B2B SaaS。用途/影响：详见来源链接。",
+      "summary": "观点文章讨论 AI 对传统 B2B SaaS 的冲击（定价、壁垒、产品形态）。用途：提醒 SaaS 团队重估护城河与价值交付方式。",
       "sources": [
         {
           "name": "Hacker News",
@@ -59,82 +59,12 @@
       ]
     },
     {
-      "id": "jiqizhixin-1",
-      "lang": "zh",
-      "type": "product",
-      "hotness": 60,
-      "title": "美团提出全新多模态统一大模型STAR，GenEval突破0.91，破解“理解-生成”零和困局",
-      "summary": "（中文媒体）详见来源链接。",
-      "sources": [
-        {
-          "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-12"
-        }
-      ]
-    },
-    {
-      "id": "jiqizhixin-2",
-      "lang": "zh",
-      "type": "product",
-      "hotness": 60,
-      "title": "ICLR 2026 | U2-BENCH：首个超大规模全场景超声多模态理解基准，开启医疗大模型新赛道",
-      "summary": "（中文媒体）详见来源链接。",
-      "sources": [
-        {
-          "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-10"
-        }
-      ]
-    },
-    {
-      "id": "jiqizhixin-3",
-      "lang": "zh",
-      "type": "product",
-      "hotness": 60,
-      "title": "倒反天罡：「租个人」网站爆火，AI开始雇人「跑腿」了",
-      "summary": "（中文媒体）详见来源链接。",
-      "sources": [
-        {
-          "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-8"
-        }
-      ]
-    },
-    {
-      "id": "jiqizhixin-4",
-      "lang": "zh",
-      "type": "policy",
-      "hotness": 60,
-      "title": "CVPR 2026 Workshop 征稿｜AdvML@CV 2026：Safety of Vision-Language Agents",
-      "summary": "（中文媒体）详见来源链接。",
-      "sources": [
-        {
-          "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-6"
-        }
-      ]
-    },
-    {
-      "id": "jiqizhixin-5",
-      "lang": "zh",
-      "type": "product",
-      "hotness": 60,
-      "title": "ICLR 2026 | 腾讯混元团队联合 KCL 提出 WildToolBench，评估 Wild 场景下 LLM 的 Agentic 能力",
-      "summary": "（中文媒体）详见来源链接。",
-      "sources": [
-        {
-          "name": "机器之心",
-          "url": "https://www.jiqizhixin.com/articles/2026-02-04-4"
-        }
-      ]
-    },
-    {
-      "id": "hn-3-claude-code-connect-to-a-local-model-whe",
+      "id": "hn-2-claude-code-connect-to-a-local-model-whe",
       "lang": "en",
       "type": "product",
       "hotness": 59,
       "title": "Claude Code: connect to a local model when your quota runs out",
-      "summary": "英文报道：Claude Code: connect to a local model when your quota runs out。用途/影响：详见来源链接。",
+      "summary": "英文资讯：Claude Code: connect to a local model when your quota runs out。用途/影响：详见来源。",
       "sources": [
         {
           "name": "Hacker News",
@@ -152,7 +82,7 @@
       "type": "product",
       "hotness": 55,
       "title": "Claude Code for Infrastructure",
-      "summary": "英文报道：Claude Code for Infrastructure。用途/影响：详见来源链接。",
+      "summary": "英文资讯：Claude Code for Infrastructure。用途/影响：详见来源。",
       "sources": [
         {
           "name": "Hacker News",
@@ -161,6 +91,96 @@
         {
           "name": "原文",
           "url": "https://www.fluid.sh/"
+        }
+      ]
+    },
+    {
+      "id": "hn-9-microsoft-s-copilot-chatbot-is-running-i",
+      "lang": "en",
+      "type": "product",
+      "hotness": 53,
+      "title": "Microsoft's Copilot chatbot is running into problems",
+      "summary": "媒体报道 Microsoft Copilot 在产品落地/体验上遇到挑战。影响：大厂 AI 产品从“能用”到“规模化好用”仍有鸿沟。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://www.wsj.com/tech/ai/microsofts-pivotal-ai-product-is-running-into-big-problems-ce235b28"
+        }
+      ]
+    },
+    {
+      "id": "hn-14-rs-sdk-drive-runescape-with-claude-code",
+      "lang": "en",
+      "type": "product",
+      "hotness": 49,
+      "title": "RS-SDK: Drive RuneScape with Claude Code",
+      "summary": "英文资讯：RS-SDK: Drive RuneScape with Claude Code。用途/影响：详见来源。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://github.com/MaxBittker/rs-sdk"
+        }
+      ]
+    },
+    {
+      "id": "hn-20-coding-agent-vms-on-nixos-with-microvm-n",
+      "lang": "en",
+      "type": "product",
+      "hotness": 48,
+      "title": "Coding Agent VMs on NixOS with Microvm.nix",
+      "summary": "英文资讯：Coding Agent VMs on NixOS with Microvm.nix。用途/影响：详见来源。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://michael.stapelberg.ch/posts/2026-02-01-coding-agent-microvm-nix/"
+        }
+      ]
+    },
+    {
+      "id": "hn-22-a-real-world-benchmark-for-ai-code-revie",
+      "lang": "en",
+      "type": "product",
+      "hotness": 43,
+      "title": "A real-world benchmark for AI code review",
+      "summary": "英文资讯：A real-world benchmark for AI code review。用途/影响：详见来源。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://www.qodo.ai/blog/how-we-built-a-real-world-benchmark-for-ai-code-review/"
+        }
+      ]
+    },
+    {
+      "id": "hn-15-show-hn-morph-videos-of-ai-testing-your",
+      "lang": "en",
+      "type": "product",
+      "hotness": 42,
+      "title": "Show HN: Morph – Videos of AI testing your PR, embedded in GitHub",
+      "summary": "英文资讯：Show HN: Morph – Videos of AI testing your PR, embedded in GitHub。用途/影响：详见来源。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://morphllm.com/products/glance"
         }
       ]
     }

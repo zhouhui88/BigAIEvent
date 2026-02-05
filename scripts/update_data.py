@@ -113,11 +113,30 @@ def classify_type(text: str) -> str:
 
 
 def zh_wrap_summary(title: str, lang: str) -> str:
+    """Return a short Chinese summary.
+
+    We do *not* call LLMs here. Use lightweight templates + a few hand-coded mappings.
+    Proper nouns remain in English.
+    """
     if lang == "zh":
-        # For Chinese sources, keep title as-is; summary is expected to be pre-written.
         return ""
-    # Minimal Chinese wrapper; keep proper nouns.
-    return f"英文报道：{title}。用途/影响：详见来源链接。"
+
+    t = title.strip()
+    tl = t.lower()
+
+    # Small mapping for recurring items
+    if "voxtral" in tl and "transcribe" in tl:
+        return "Mistral 更新语音转写（speech-to-text）相关能力。用途：会议纪要、客服质检、语音助手等语音→文本场景。"
+    if tl.startswith("claude is a space to think") or "space to think" in tl:
+        return "Anthropic 解释 Claude 的产品定位：更强调结构化思考与复杂任务推进。用途：规划、写作、分步推理与任务拆解。"
+    if "copilot" in tl and "problems" in tl:
+        return "媒体报道 Microsoft Copilot 在产品落地/体验上遇到挑战。影响：大厂 AI 产品从“能用”到“规模化好用”仍有鸿沟。"
+    if "guardrails" in tl and "governance" in tl and "agent" in tl:
+        return "讨论如何用“边界治理”而非纯提示词来管控 agentic systems（权限、工具、数据、审批）。用途：企业上线 AI Agent 的安全清单。"
+    if "ai is killing" in tl and "saas" in tl:
+        return "观点文章讨论 AI 对传统 B2B SaaS 的冲击（定价、壁垒、产品形态）。用途：提醒 SaaS 团队重估护城河与价值交付方式。"
+
+    return f"英文资讯：{t}。用途/影响：详见来源。"
 
 
 def parse_hn() -> List[Item]:
@@ -153,7 +172,7 @@ def parse_hn() -> List[Item]:
                 title=title,
                 summary=zh_wrap_summary(title, "en"),
                 sources=[
-                    {"name": "Hacker News", "url": "https://news.ycombinator.com/"},
+                    {"name": "Hacker News", "url": f"https://news.ycombinator.com/"},
                     {"name": "原文", "url": url},
                 ],
                 published_at=None,
