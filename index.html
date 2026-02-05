@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI 早报（热点）</title>
+  <title>AI大事件</title>
   <style>
     :root { --bg:#0b0f19; --card:#121a2a; --muted:#92a2c3; --text:#e8eefc; --link:#8ab4ff; --tag:#1f2a44; }
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei"; background:var(--bg); color:var(--text);} 
@@ -11,11 +11,8 @@
     h1 { margin:0 0 6px; font-size: 22px; }
     .sub { color:var(--muted); font-size: 13px; line-height: 1.5; }
     main { max-width: 980px; margin:0 auto; padding: 12px 18px 48px; }
-    .toolbar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin: 14px 0 18px; }
-    input[type="search"]{ flex:1; min-width: 220px; padding:10px 12px; border-radius:10px; border:1px solid #223154; background:#0f1626; color:var(--text); }
-    select{ padding:10px 12px; border-radius:10px; border:1px solid #223154; background:#0f1626; color:var(--text); }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
-    .card { background:var(--card); border:1px solid #1b2742; border-radius:14px; padding:14px 14px 12px; }
+    .list { list-style: decimal; padding-left: 18px; margin: 10px 0 0; display:flex; flex-direction:column; gap: 12px; }
+    .card { list-style-position: outside; background:var(--card); border:1px solid #1b2742; border-radius:14px; padding:14px 14px 12px; }
     .title { font-size: 15px; font-weight: 650; margin: 0 0 8px; line-height:1.35; }
     .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:10px; }
     .tag { background:var(--tag); border:1px solid #2a3a62; color:var(--muted); border-radius:999px; padding:3px 8px; font-size:12px; }
@@ -30,25 +27,12 @@
 </head>
 <body>
   <header>
-    <h1>AI 早报（热点）</h1>
+    <h1 id="title">AI大事件</h1>
     <div class="sub" id="subtitle">加载中…</div>
   </header>
   <main>
-    <div class="toolbar">
-      <input id="q" type="search" placeholder="搜索标题/摘要/来源…" />
-      <select id="lang">
-        <option value="all">全部语言</option>
-        <option value="en">英文</option>
-        <option value="zh">中文</option>
-      </select>
-      <select id="type">
-        <option value="all">全部类型</option>
-        <option value="product">产品/商业</option>
-        <option value="policy">政策/安全</option>
-      </select>
-    </div>
     <div id="err" class="error" style="display:none"></div>
-    <div class="grid" id="cards"></div>
+    <ol id="list" class="list"></ol>
   </main>
   <footer>
     数据文件：<code>data.json</code>。这是静态页面，可直接放到 GitHub Pages。
@@ -63,7 +47,8 @@
       if(!res.ok) throw new Error('无法加载 data.json: HTTP ' + res.status);
       const data = await res.json();
       window.__data = data;
-      document.getElementById('subtitle').textContent = `${data.title} · 时间窗：${data.window} · 生成时间：${data.generatedAt}`;
+      document.getElementById('title').textContent = (data.displayTitle || data.title || 'AI大事件');
+      document.getElementById('subtitle').textContent = `时间窗：${data.window} · 生成时间：${data.generatedAt}`;
       render();
     }catch(e){
       document.getElementById('subtitle').textContent = '加载失败';
@@ -73,51 +58,31 @@
     }
   }
 
-  function scoreLabel(item){
-    if(item.hotness == null) return '';
-    return `热度 ${item.hotness}`;
-  }
-
   function render(){
-    const q = document.getElementById('q').value.trim().toLowerCase();
-    const lang = document.getElementById('lang').value;
-    const type = document.getElementById('type').value;
-
     let items = (window.__data?.items || []).slice();
-    if(lang !== 'all') items = items.filter(x => x.lang === lang);
-    if(type !== 'all') items = items.filter(x => x.type === type);
-    if(q){
-      items = items.filter(x => (
-        (x.title||'').toLowerCase().includes(q) ||
-        (x.summary||'').toLowerCase().includes(q) ||
-        (x.sources||[]).some(s => (s.name||'').toLowerCase().includes(q) || (s.url||'').toLowerCase().includes(q))
-      ));
-    }
-
     // sort by hotness desc (fallback: 0)
     items.sort((a,b) => (b.hotness||0) - (a.hotness||0));
 
-    const root = document.getElementById('cards');
+    const root = document.getElementById('list');
     root.innerHTML = items.map(x => {
-      const sources = (x.sources||[]).map(s => `<div><span class="tag">${esc(s.name)}</span> <a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.url)}</a></div>`).join('');
+      const sources = (x.sources||[]).map(s => {
+        const name = s.name ? `<span class="tag">${esc(s.name)}</span> ` : '';
+        return `<div>${name}<a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.url)}</a></div>`;
+      }).join('');
+
       return `
-        <article class="card">
-          <h2 class="title">${esc(x.title)}</h2>
+        <li class="card">
+          <div class="title">${esc(x.title)}</div>
           <div class="meta">
             <span class="tag">${x.lang === 'zh' ? '中文' : 'English'}</span>
             <span class="tag">${x.type === 'policy' ? '政策/安全' : '产品/商业'}</span>
-            ${x.hotness != null ? `<span class="tag score">${esc(scoreLabel(x))}</span>` : ''}
           </div>
-          <div class="content">${esc(x.summary)}</div>
           <div class="sources">${sources}</div>
-        </article>
+          <div class="content">${esc(x.summary)}</div>
+        </li>
       `;
     }).join('');
   }
-
-  document.getElementById('q').addEventListener('input', render);
-  document.getElementById('lang').addEventListener('change', render);
-  document.getElementById('type').addEventListener('change', render);
 
   load();
 </script>
