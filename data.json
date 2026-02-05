@@ -1,0 +1,53 @@
+{
+  "title": "AI 热点（示例）",
+  "window": "最近 24–36 小时（示例数据）",
+  "generatedAt": "2026-02-05 09:14 Asia/Shanghai (sample)",
+  "items": [
+    {
+      "id": "hn-voxtral-transcribe-2",
+      "lang": "en",
+      "type": "product",
+      "hotness": 95,
+      "title": "Voxtral Transcribe 2 released",
+      "summary": "Mistral announced an update focused on speech transcription / speech-related capabilities. Useful for meeting notes, customer support QA, and voice assistants; check the official post for details.",
+      "sources": [
+        {"name": "Mistral", "url": "https://mistral.ai/news/voxtral-transcribe-2"},
+        {"name": "Hacker News", "url": "https://news.ycombinator.com/"}
+      ]
+    },
+    {
+      "id": "hn-claude-is-a-space-to-think",
+      "lang": "en",
+      "type": "product",
+      "hotness": 80,
+      "title": "Claude is a space to think",
+      "summary": "Anthropic published a post positioning Claude as a structured space for thinking and complex task work. Useful as a workflow companion for planning, writing, and multi-step reasoning.",
+      "sources": [
+        {"name": "Anthropic", "url": "https://www.anthropic.com/news/claude-is-a-space-to-think"},
+        {"name": "Hacker News", "url": "https://news.ycombinator.com/"}
+      ]
+    },
+    {
+      "id": "mit-agentic-governance",
+      "lang": "en",
+      "type": "policy",
+      "hotness": 62,
+      "title": "From guardrails to governance: securing agentic systems",
+      "summary": "MIT Technology Review discusses moving from prompt-level guardrails to boundary governance for agentic systems (identity, tools, data, approvals). Useful as a practical checklist for enterprise agent deployment.",
+      "sources": [
+        {"name": "MIT Technology Review", "url": "https://www.technologyreview.com/2026/02/04/1131014/from-guardrails-to-governance-a-ceos-guide-for-securing-agentic-systems/"}
+      ]
+    },
+    {
+      "id": "jiqizhixin-minicpm-o-45",
+      "lang": "zh",
+      "type": "product",
+      "hotness": 70,
+      "title": "面壁开源 MiniCPM-o 4.5：全双工全模态、强调主动交互",
+      "summary": "报道强调模型可“边看边听边说”，更接近实时对话/多模态助理形态。对产品价值：适合做实时语音+视觉交互原型、低成本多模态体验验证。",
+      "sources": [
+        {"name": "机器之心", "url": "https://www.jiqizhixin.com/articles/2026-02-04-14"}
+      ]
+    }
+  ]
+}
