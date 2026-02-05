@@ -1,53 +1,167 @@
 {
   "displayTitle": "2026年2月5日 AI大事件",
-  "title": "AI大事件（示例）",
-  "window": "最近 24–36 小时（示例数据）",
-  "generatedAt": "2026-02-05 09:14 Asia/Shanghai (sample)",
+  "title": "AI大事件",
+  "generatedAt": "2026-02-05 10:35 Asia/Shanghai",
+  "window": "最近24–36小时",
   "items": [
     {
-      "id": "hn-voxtral-transcribe-2",
+      "id": "hn-0-voxtral-transcribe-2",
       "lang": "en",
       "type": "product",
-      "hotness": 95,
-      "title": "Voxtral Transcribe 2 发布",
-      "summary": "Mistral 发布语音转写相关更新。用途：可用于会议纪要、客服质检、语音助手等语音→文本场景（具体能力/定价以官方为准）。",
+      "hotness": 100,
+      "title": "Voxtral Transcribe 2",
+      "summary": "英文报道：Voxtral Transcribe 2。用途/影响：详见来源链接。",
       "sources": [
-        {"name": "Mistral", "url": "https://mistral.ai/news/voxtral-transcribe-2"},
-        {"name": "Hacker News", "url": "https://news.ycombinator.com/"}
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://mistral.ai/news/voxtral-transcribe-2"
+        }
       ]
     },
     {
-      "id": "hn-claude-is-a-space-to-think",
+      "id": "hn-18-claude-is-a-space-to-think",
       "lang": "en",
       "type": "product",
-      "hotness": 80,
-      "title": "Claude：一个用于思考的空间（space to think）",
-      "summary": "Anthropic 用官方文章解释 Claude 的定位：更像一个支持结构化思考与复杂任务推进的工作台。用途：规划、写作、分步推理与任务拆解。",
+      "hotness": 77,
+      "title": "Claude is a space to think",
+      "summary": "英文报道：Claude is a space to think。用途/影响：详见来源链接。",
       "sources": [
-        {"name": "Anthropic", "url": "https://www.anthropic.com/news/claude-is-a-space-to-think"},
-        {"name": "Hacker News", "url": "https://news.ycombinator.com/"}
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://www.anthropic.com/news/claude-is-a-space-to-think"
+        }
       ]
     },
     {
-      "id": "mit-agentic-governance",
+      "id": "hn-5-ai-is-killing-b2b-saas",
       "lang": "en",
-      "type": "policy",
-      "hotness": 62,
-      "title": "From guardrails to governance: securing agentic systems",
-      "summary": "MIT Technology Review discusses moving from prompt-level guardrails to boundary governance for agentic systems (identity, tools, data, approvals). Useful as a practical checklist for enterprise agent deployment.",
+      "type": "product",
+      "hotness": 63,
+      "title": "AI is killing B2B SaaS",
+      "summary": "英文报道：AI is killing B2B SaaS。用途/影响：详见来源链接。",
       "sources": [
-        {"name": "MIT Technology Review", "url": "https://www.technologyreview.com/2026/02/04/1131014/from-guardrails-to-governance-a-ceos-guide-for-securing-agentic-systems/"}
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://nmn.gl/blog/ai-killing-b2b-saas"
+        }
       ]
     },
     {
-      "id": "jiqizhixin-minicpm-o-45",
+      "id": "jiqizhixin-1",
       "lang": "zh",
       "type": "product",
-      "hotness": 70,
-      "title": "面壁开源 MiniCPM-o 4.5：全双工全模态、强调主动交互",
-      "summary": "报道强调模型可“边看边听边说”，更接近实时对话/多模态助理形态。对产品价值：适合做实时语音+视觉交互原型、低成本多模态体验验证。",
+      "hotness": 60,
+      "title": "美团提出全新多模态统一大模型STAR，GenEval突破0.91，破解“理解-生成”零和困局",
+      "summary": "（中文媒体）详见来源链接。",
       "sources": [
-        {"name": "机器之心", "url": "https://www.jiqizhixin.com/articles/2026-02-04-14"}
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-12"
+        }
+      ]
+    },
+    {
+      "id": "jiqizhixin-2",
+      "lang": "zh",
+      "type": "product",
+      "hotness": 60,
+      "title": "ICLR 2026 | U2-BENCH：首个超大规模全场景超声多模态理解基准，开启医疗大模型新赛道",
+      "summary": "（中文媒体）详见来源链接。",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-10"
+        }
+      ]
+    },
+    {
+      "id": "jiqizhixin-3",
+      "lang": "zh",
+      "type": "product",
+      "hotness": 60,
+      "title": "倒反天罡：「租个人」网站爆火，AI开始雇人「跑腿」了",
+      "summary": "（中文媒体）详见来源链接。",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-8"
+        }
+      ]
+    },
+    {
+      "id": "jiqizhixin-4",
+      "lang": "zh",
+      "type": "policy",
+      "hotness": 60,
+      "title": "CVPR 2026 Workshop 征稿｜AdvML@CV 2026：Safety of Vision-Language Agents",
+      "summary": "（中文媒体）详见来源链接。",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-6"
+        }
+      ]
+    },
+    {
+      "id": "jiqizhixin-5",
+      "lang": "zh",
+      "type": "product",
+      "hotness": 60,
+      "title": "ICLR 2026 | 腾讯混元团队联合 KCL 提出 WildToolBench，评估 Wild 场景下 LLM 的 Agentic 能力",
+      "summary": "（中文媒体）详见来源链接。",
+      "sources": [
+        {
+          "name": "机器之心",
+          "url": "https://www.jiqizhixin.com/articles/2026-02-04-4"
+        }
+      ]
+    },
+    {
+      "id": "hn-3-claude-code-connect-to-a-local-model-whe",
+      "lang": "en",
+      "type": "product",
+      "hotness": 59,
+      "title": "Claude Code: connect to a local model when your quota runs out",
+      "summary": "英文报道：Claude Code: connect to a local model when your quota runs out。用途/影响：详见来源链接。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/"
+        }
+      ]
+    },
+    {
+      "id": "hn-4-claude-code-for-infrastructure",
+      "lang": "en",
+      "type": "product",
+      "hotness": 55,
+      "title": "Claude Code for Infrastructure",
+      "summary": "英文报道：Claude Code for Infrastructure。用途/影响：详见来源链接。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "name": "原文",
+          "url": "https://www.fluid.sh/"
+        }
       ]
     }
   ]

@@ -1,0 +1,42 @@
+name: Update AI briefing data
+
+on:
+  schedule:
+    # 09:25 Asia/Shanghai == 01:25 UTC
+    - cron: '25 1 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ai-briefing
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate data.json
+        run: |
+          python3 scripts/update_data.py
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "chore: update data.json"
+          git push
